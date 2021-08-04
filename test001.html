@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>666</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		var arr=[10,9,15,3,7,6,5]
+		// 1.冒泡排序
+/* 			var len =arr.length
+		for(var i=len-1; i>0;i--){
+			for(var j=0;j<i;j++){
+				var k=j+1
+				if(arr[j]>arr[k]){
+					var a = arr[j]
+					arr[j]=arr[k]
+					arr[k]=a
+				}
+			}
+		} */
+		// 2.选择排序
+		var len=arr.length
+		for(var i=0;i<len-1;i++){
+			var index=i
+			for(var j=i+1;j<len;j++){
+				index=arr[index]<arr[j]?index:j
+			}
+			var a=arr[i]
+			arr[i]=arr[index]
+			arr[index]=a
+		}
+		console.log(arr)
+		</script>
+	</body>
+</html>
